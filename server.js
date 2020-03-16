@@ -19,7 +19,8 @@ app.use(express.static("public"));
 
 // Basic route that sends the user to the index page
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "public/index.html"));
+   // res.sendFile(path.join(__dirname, "public/index.html"));
+   res.sendFile(path.join(__dirname, "public/index.html))
 });
 
 // Basic route that sends the user to the notes page

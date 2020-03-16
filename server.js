@@ -1,11 +1,11 @@
 // Dependencies
-// =============================================================
+
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
 
 // Sets up the Express App
-// =============================================================
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Routes
-// =============================================================
+
 
 // Basic route that sends the user to the index page
 app.get("/", function(req, res) {
@@ -83,7 +83,7 @@ app.delete("/api/notes/:id", function(req, res) {
 });
 
 // Starts the server to begin listening
-// =============================================================
+
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
 });
